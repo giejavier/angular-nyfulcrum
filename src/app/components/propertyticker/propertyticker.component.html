@@ -1,0 +1,9 @@
+<div class="ticker">
+    <app-bidtile [bidTile]="outbidCount" valueColor="red"></app-bidtile>
+    <app-bidtile [bidTile]="activeCount" valueColor="lightgrey"></app-bidtile>
+    <app-bidtile [bidTile]="winningCount" valueColor="#9ACD32"></app-bidtile>
+    <app-propertytile *ngFor="let prop of propertyTiles" [propertyTile]="prop" (propertyTileClick)="onPropertyClick($event)"></app-propertytile>
+    <app-bidtile [bidTile]="winningBid" valueColor="#9ACD32"></app-bidtile>
+    <app-bidtile [bidTile]="activeBid" valueColor="lightgrey"></app-bidtile>
+    <app-bidtile [bidTile]="outbidBid" valueColor="red"></app-bidtile>
+</div>
